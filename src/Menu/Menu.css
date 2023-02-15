@@ -1,0 +1,37 @@
+.navbar {
+    width: auto;    
+    display: flex;    
+    gap: 10px;
+    color: #5f59f7;
+    background-color: white;
+    font-size: medium;
+}
+
+.navbar ul {
+    width: 100%;
+    padding-inline-end: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar ul li a {
+    padding: 6px 10px;
+    border: 1px solid #5f59f7;
+    border-radius: 6px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.navbar ul li:hover a {    
+    background-color: #5f59f7;
+    color: white;  
+}
+
+.navbar .selected {
+    background-color: #5f59f7;
+    color: white;  
+}
+

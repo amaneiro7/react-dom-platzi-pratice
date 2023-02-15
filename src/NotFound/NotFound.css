@@ -1,0 +1,13 @@
+.NotFound {
+    display: grid;    
+    height: 500px;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;    
+}
+
+.NotFound h1 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

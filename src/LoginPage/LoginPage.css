@@ -1,0 +1,56 @@
+.LoginPage {
+    margin-block-start: 20px;    
+    width: auto;
+    height: auto;
+    padding: 40px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+}
+
+.LoginPage h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.LoginPage__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.LoginPage__form>div {
+    width: 100%;
+}
+
+.LoginPage__form.error input {
+    border: 1px solid red;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.LoginPage__form input {
+    margin-block: 6px;
+    width: 100%;
+    height: 28px;
+    border-radius: 6px;
+    padding: 0 6px;
+    border: 1px solid #5f59f7;
+}
+
+.LoginPage__form button {
+    width: max-content;
+    padding: 6px 10px;
+    border: 1px solid #5f59f7;
+    border-radius: 6px;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: background-color .3s ease, color .3s ease;
+}
+
+.LoginPage__form button:hover {    
+    background-color: #5f59f7;
+    color: white;  
+}

@@ -1,0 +1,87 @@
+.profile__card {
+    margin-block-start: 20px;    
+    width: auto;
+    height: auto;
+    padding: 40px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+}
+
+.profile__card h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.profile__card--container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: flex-start;
+    align-items: flex-start;    
+}
+
+.profile__card--name {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+
+.profile__card--name img {
+    width: 70ppx;
+    height: 70px;    
+}
+
+.profile__card--name select,
+.profile__card--name p {
+    font-size: 16px;
+    margin: 6px 0;
+    padding: 1px 2px;    
+}
+
+.profile__card--name select {
+    border-radius: 6px;    
+    border: 1px solid #5f59f7;    
+    
+}
+
+.profile__card--name button {
+    width: max-content;    
+    padding: 6px 10px;
+    border: 1px solid #5f59f7;
+    border-radius: 6px;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: background-color .3s ease, color .3s ease;
+}
+
+.profile__card--name button:hover {    
+    background-color: #5f59f7;
+    color: white;  
+}
+
+
+.profile__card--info h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.profile__card--info label {
+    display: block;
+    margin: 6px 0;
+    padding: 6px 0;
+}
+.profile__card--info input,
+.profile__card--info p {
+    font-size: 16px;
+    margin: 6px 6px;
+    padding: 1px 2px;    
+}
+
+.profile__card--info input {
+    border-radius: 6px;    
+    border: 1px solid #5f59f7;    
+}
