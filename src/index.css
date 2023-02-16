@@ -19,8 +19,12 @@ body {
 main {
   width: 100%;  
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 500px));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 750px));
   justify-content: center;
   align-items: flex-start;
   gap: 20px;
+}
+
+h1,h2,h3,h4.h5.h6 {
+  color: #5f59f7;
 }

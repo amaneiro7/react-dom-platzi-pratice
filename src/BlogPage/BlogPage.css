@@ -1,0 +1,73 @@
+.BlogPage {
+    margin-block-start: 20px;    
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;    
+}
+
+.BlogPage ul {
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.BlogPage ul li {
+    width: 250px;
+    height: max-content;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #5f59f7;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: all .3s ease;
+}
+
+
+
+.BlogPage ul li:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.BlogPage ul li a {
+    text-decoration: none;
+    color: #5f59f7;
+}
+
+.BlogData {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #5f59f7;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.BlogData button {
+    width: max-content;
+    padding: 6px 10px;
+    border: 1px solid #5f59f7;
+    border-radius: 6px;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: background-color .3s ease, color .3s ease;
+}
+
+.BlogData button:hover {    
+    background-color: #5f59f7;
+    color: white;  
+}
+
+.BlogData a {
+    margin-left: 8px;
+    text-decoration: none;
+    color: #5f59f7;
+}
