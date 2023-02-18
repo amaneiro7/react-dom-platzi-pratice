@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-dom-platzi-pratice/static/css/main.b7c39e6d.css",
+    "main.js": "/react-dom-platzi-pratice/static/js/main.a33d0c61.js",
+    "index.html": "/react-dom-platzi-pratice/index.html",
+    "main.b7c39e6d.css.map": "/react-dom-platzi-pratice/static/css/main.b7c39e6d.css.map",
+    "main.a33d0c61.js.map": "/react-dom-platzi-pratice/static/js/main.a33d0c61.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7c39e6d.css",
+    "static/js/main.a33d0c61.js"
+  ]
+}
