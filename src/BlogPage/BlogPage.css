@@ -11,23 +11,27 @@
 
 .BlogPage ul {
     padding: 0;
-    display: flex;
+    display: grid;
+    align-items: flex-start;
+    justify-content: center;
     gap: 20px;
     list-style: none;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 1fr;
 }
 
 .BlogPage ul li {
     width: 250px;
-    height: max-content;
+    height: 250px;
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-between;
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #5f59f7;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     transition: all .3s ease;
 }
-
-
 
 .BlogPage ul li:hover {
     transform: scale(1.05);
@@ -40,16 +44,18 @@
 }
 
 .BlogData {
-    width: 80%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     gap: 4px;
     padding: 20px;
+    margin-top: 16px;
+    margin-inline-start: 38px;
     border-radius: 8px;
     border: 1px solid #5f59f7;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-
+.BlogPage button,
 .BlogData button {
     width: max-content;
     padding: 6px 10px;
@@ -60,7 +66,7 @@
     cursor: pointer;
     transition: background-color .3s ease, color .3s ease;
 }
-
+.BlogPage button:hover,
 .BlogData button:hover {    
     background-color: #5f59f7;
     color: white;  

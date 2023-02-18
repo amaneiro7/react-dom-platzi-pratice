@@ -20,8 +20,7 @@ export function LoginPage() {
         }
         auth.login({userData})
 
-        if (!auth.error || auth.error === null) {
-            console.log('no estoy aqui');
+        if (!auth.error || auth.error === null) {            
             navigate(from, {replace: true});
         } 
         
@@ -36,7 +35,7 @@ export function LoginPage() {
         <div className='LoginPage'>
             <h1>Login</h1>
             <br />
-            <form ref={formRef} className={`LoginPage__form ${auth.error && "error"}`} >
+            <form ref={formRef} className={`LoginPage__form ${auth.error && "error"}`} onSubmit={login}>
             <label htmlFor="username">Username</label>
                 <input 
                     name={'username'}
@@ -52,7 +51,7 @@ export function LoginPage() {
                     required
                 />
                 {auth.error && <p>{auth.errorMsg}</p>}
-                <button type='button' onClick={login}>Login</button>
+                <button type={'submit'} >Login</button>
             </form>
         </div>
     )

@@ -11,6 +11,12 @@ export function BlogPost() {
 
     const blogpost = blogdata.find(post => post.slug === slug);
 
+    const deleteBlog = () => {
+        const blogpostIndex = blogdata.findIndex(post => post.slug === slug)
+        blogdata.splice(blogpostIndex, 1)
+        navigate("/blog")
+    }
+
     const returnToBlog = () => {
             navigate('/blog')
         }
@@ -34,7 +40,7 @@ export function BlogPost() {
 
             </p>
             {(auth.user?.role === "admin" || auth.user?.username === blogpost.author) ?
-            <button>Eliminar</button> : null
+            <button onClick={deleteBlog}>Delete</button> : null
             }
         </section>
     )

@@ -38,21 +38,21 @@ export function RegisterPage() {
             <form ref={formRef} className={`RegisterPage__form ${auth.error && "error"}`}>
                 <div>
                     <label htmlFor="username">Username</label>
-                    <input type="text" name='username'  required/>
+                    <input type="text" name='username'  autocomplete='username' required/>
                 </div>
                 <div className='RegisterPage__DoubeDiv'>
                     <div>
                         <label htmlFor="name">First Name</label>
-                        <input type="text" name='name'  required/>
+                        <input type="text" name='name' autocomplete='name' required/>
                     </div>
                     <div>
                         <label htmlFor="lastname">Last Name</label>
-                        <input type="text" name='lastname'  required/>
+                        <input type="text" name='lastname' autocomplete='lastname' required/>
                     </div>
                 </div>
                 <div>
                     <label htmlFor="email">Email</label>
-                    <input type="text" name='email'  required/>
+                    <input type="text" name='email' autocomplete='email' required/>
                 </div>
                 <div>
                     <label htmlFor='password'>Password</label>

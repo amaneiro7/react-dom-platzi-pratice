@@ -1,31 +1,17 @@
-.LogoutPage {
-    margin-block-start: 20px;    
+.HomePage {
     width: auto;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     padding: 40px;
+    margin-block-start: 20px;
     background-color: #f2f2f2;
     border-radius: 8px;
 }
 
-.LogoutPage h1 {
-    margin: 0;
-    padding: 0;
-}
-
-.LogoutPage form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.LogoutPage form>div {
-    width: 100%;
-}
-
-.LoginPage form button {
+.HomePage a {
     width: max-content;
     padding: 6px 10px;
     border: 1px solid #5f59f7;
@@ -36,7 +22,7 @@
     transition: background-color .3s ease, color .3s ease;
 }
 
-.LoginPage form button:hover {    
+.HomePage a:hover {
     background-color: #5f59f7;
-    color: white;  
+    color: white; 
 }

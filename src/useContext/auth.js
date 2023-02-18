@@ -21,7 +21,7 @@ const userDefaultList = [
         email: "juandc@email.com",
         password: "admin123",
         imgUrl: "https://ui-avatars.com/api/?name=",
-        role: "editor"
+        role: "creator"
     },
     {
         username: "nicobytes",

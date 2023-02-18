@@ -19,7 +19,8 @@ body {
 main {
   width: 100%;  
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 750px));
+  grid-template-columns: repeat(auto-fit, minmax(350px, min-content));
+  padding: 20px;
   justify-content: center;
   align-items: flex-start;
   gap: 20px;

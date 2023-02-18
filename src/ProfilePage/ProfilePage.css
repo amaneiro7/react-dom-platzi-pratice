@@ -15,6 +15,7 @@
 .profile__card--container {
     display: grid;
     grid-template-columns: 40% 60%;
+    gap: 20px;
     justify-content: flex-start;
     align-items: flex-start;    
 }
@@ -27,6 +28,11 @@
     align-items: flex-start;
     justify-content: space-between;
     text-transform: capitalize;
+}
+
+.profile__card--name>div {
+    display: flex;
+    gap: 8px;
 }
 
 .profile__card--name img {
